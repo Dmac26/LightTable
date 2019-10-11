@@ -33,7 +33,7 @@
                                    (set! (.-custom mark) (.-custom watch))
                                    (set! (.-ltwatchid mark) id)
                                    mark))))]
-    ;;replace watched ranges with code
+    ;;replace watch ranges with code
     (doseq [watch watches
             :let [pos (.find watch)
                   text (ed/range doc (.-from pos) (.-to pos))
